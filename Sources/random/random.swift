@@ -1,7 +1,5 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
-
 import ArgumentParser
+import Foundation
 
 @main
 struct Random: ParsableCommand {
@@ -14,7 +12,12 @@ struct Random: ParsableCommand {
     @Argument(help: "The maximum value for the random number generator.")
     var max: Double = 1
 
-    mutating func run() {
+    mutating func run() throws {
+        if min > max {
+            print("Minimum value is greater than maximum value")
+            return
+        }
+
         if (isInt) {
             print(Int.random(in: Int(min)...Int(max)))
         } else {
