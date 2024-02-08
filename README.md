@@ -14,10 +14,10 @@ A command line tool to generate random numbers, written in Swift.
 2. Build the package
 
    ```sh
-   swift build -c release
+   make
    ```
 
-   The built package will be at `./.build/release/random`. You can then move it to somewhere in your `PATH`.
+   You can then run `./random`.
 
 ## Usage
 
@@ -44,7 +44,3 @@ You can view the help by using `-h`:
 ```sh
 random -h # shows the help menu for the command
 ```
-
-## Licenses
-
-All of the code in this repository is licensed under the [0BSD license](./LICENSE).
