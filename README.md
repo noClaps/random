@@ -39,8 +39,16 @@ If you want to generate integers, you can enable the `-i` flag.
 random -i 0 10 # generates a random integer between 0 and 10
 ```
 
-You can view the help by using `-h`:
+If you want to flip a coin, you can use the `-c` or `--coin` flag.
+
+```sh
+random -c # returns either Heads or Tails
+random --coin
+```
+
+You can view the help by using `-h` or `--help`:
 
 ```sh
 random -h # shows the help menu for the command
+random --help
 ```
